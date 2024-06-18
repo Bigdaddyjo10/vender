@@ -6,10 +6,10 @@ export class MoneyController {
     }
 
     addMoney() {
-        console.log('Adding Money');
+
         moneyService.addMoney()
     }
-    spendMoney() {
-        moneyService.spendMoney()
+    spendMoney(nameItem) {
+        moneyService.spendMoney(nameItem)
     }
 }

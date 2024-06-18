@@ -42,24 +42,17 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-md-4">
-              <div class="card-body bg-black d-flex justify-content-between align-items-center m-2 text-light">
-                <p>A&W</p>
-                <p>$1.25</p>
-                <button onclick="app.MoneyController.spendMoney()">123</button>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
               <div class="card-body bg-black d-flex justify-content-between m-2 text-light align-items-center">
                 <p>Coca Cola</p>
                 <p>$2.25</p>
-                <button>123</button>
+                <button onclick="app.MoneyController.spendMoney('Cola')">123</button>
               </div>
             </div>
             <div class="col-12 col-md-4">
               <div class="card-body bg-black d-flex justify-content-between m-2 text-light align-items-center">
                 <p>Mountain Dew</p>
-                <p>$3.25</p>
-                <button>123</button>
+                <p>$0.25</p>
+                <button onclick="app.MoneyController.spendMoney('Mountain Dew')">123</button>
               </div>
             </div>
           </div>
@@ -86,7 +79,7 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex justify-content-end p-1">
-              <button onclick="app.MoneyController.addMoney()" class="btn btn-success">Add $0.25</button>
+              <button onclick="app.MoneyController.addMoney()" class="btn btn-success">Add $<span id="myMoneyId">0.25</span></button>
             </div>
           </div>
         </div>

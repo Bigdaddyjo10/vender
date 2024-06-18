@@ -9,21 +9,20 @@ class ObservableAppState extends EventEmitter {
   examples = []
 
   venderItems = [
-    new VenderItems(
-      'A&W',
-      '2.25'
-    ),
-    new VenderItems(
-      'Coca-Cola',
-      '1.25'
-    ),
-    new VenderItems(
-      'Mountain Dew',
-      '3.25'
-    )
+    {
+      name: 'A&W',
+      cost: 1.25
+    },
+    {
+      name: 'Cola',
+      cost: 2.25
+    },
+    {
+      name: 'Mountain Dew',
+      cost: 0.25
+    },
   ]
-
-  myMoney = 0
+  myMoney = 0.25
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
