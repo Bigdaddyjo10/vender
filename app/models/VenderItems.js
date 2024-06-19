@@ -14,7 +14,7 @@ export class VenderItems {
                     <img class="img-thumbnail" src="${this.img}" alt="">
                     <p>${this.name}</p>
                     <p>$${this.cost}</p>
-                    <button onclick="app.MoneyController.spendMoney(${this.name})">153</button>
+                    <button onclick="app.MoneyController.spendMoney('${this.name}')">153</button>
             </div>
         </div>
         `
