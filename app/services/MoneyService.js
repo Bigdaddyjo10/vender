@@ -11,6 +11,9 @@ class MoneyService {
 
     spendMoney(nameItem) {
         const itemName = AppState.venderItems.find((item) => item.name == nameItem)
+        if (AppState.myMoney < itemName.cost) {
+            return
+        }
         AppState.myMoney -= itemName.cost
         const moneyId = document.getElementById('myMoneyId')
         moneyId.innerText = AppState.myMoney
