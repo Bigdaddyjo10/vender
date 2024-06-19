@@ -14,7 +14,7 @@ export class VenderItems {
                 <div class="card bg-black d-flex justify-content-between align-items-center m-2 text-light">
                     <img onclick="app.MoneyController.spendMoney('${this.name}')" class="img-thumbnail" src="${this.img}" alt="">
                     <p class="${this.textColor}">${this.name}</p>
-                    <p>$${this.cost}</p>
+                    <p>$${this.cost.toFixed(2)}</p>
             </div>
         </div>
         `

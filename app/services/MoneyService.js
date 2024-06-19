@@ -5,7 +5,7 @@ class MoneyService {
     addMoney() {
         AppState.myMoney += 0.25
         const moneyId = document.getElementById('myMoneyId')
-        moneyId.innerText = AppState.myMoney
+        moneyId.innerText = AppState.myMoney.toFixed(2)
         console.log(AppState.myMoney);
     }
 
@@ -17,8 +17,8 @@ class MoneyService {
         AppState.myMoney -= itemName.cost
         const moneyId = document.getElementById('myMoneyId')
         moneyId.innerText = AppState.myMoney
-        console.log('The items names is ' + itemName.name);
-        console.log('your money is ' + AppState.myMoney);
+        // console.log('The items names is ' + itemName.name);
+        // console.log('your money is ' + AppState.myMoney);
     }
 }
 export const moneyService = new MoneyService()
