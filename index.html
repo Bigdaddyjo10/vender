@@ -37,38 +37,10 @@
       <section id="router-view">
         <!-- primary viewport -->
       </section>
-      <!-- ANCHOR view drinks -->
       <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <div class="card-body bg-black d-flex justify-content-between m-2 text-light align-items-center">
-                <p>Coca Cola</p>
-                <p>$2.25</p>
-                <button onclick="app.MoneyController.spendMoney('Cola')">123</button>
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="card-body bg-black d-flex justify-content-between m-2 text-light align-items-center">
-                <p>Mountain Dew</p>
-                <p>$0.25</p>
-                <button onclick="app.MoneyController.spendMoney('Mountain Dew')">123</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ANCHOR where the drinks come out -->
-      <section>
+        <!-- ANCHOR view drinks -->
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex justify-content-center">
-                <p class="bg-black text-light">Place where you get your drinks</p>
-              </div>
-            </div>
-          </div>
+          <div id="venderView" class="row"></div>
         </div>
       </section>
     </main>
@@ -85,6 +57,7 @@
         </div>
       </div>
       <div class="text-center no-select">
+        <p class="bg-light text-black">Place where you get your drinks</p>
         <p class="mb-0"><small>Made with 💖 by CodeWorks</small></p>
       </div>
     </footer>
